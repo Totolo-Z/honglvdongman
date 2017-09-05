@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>连载动漫</title>
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <!--<link rel="stylesheet/less" href="less/base.less"/>-->
+    <!--<link rel="stylesheet/less" href="less/serialize.less"/>-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/serialize.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <script src="lib/template/template.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!--<script src="lib/less/less.js"></script>-->
+    <script src="js/serialize.js"></script>
+</head>
+<body>
+<div id="layout">
+    <section>
+        <div id="serialize">
+            <div class="topTitle clearfix">
+                <a href="./index.html"><span>&lt;</span></a>
+                <h3>连载动漫</h3>
+            </div>
+            <div class="serialize-content">
+            </div>
+
+            <script id="serialize-template" type="text/html">
+                {{each}}
+                <div class="media">
+                    <div class="media-left">
+                        <a href="{{$value.url}}">
+                            <img class="media-object" src="{{$value.img}}" alt="">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{$value.name}}</h4>
+                        <p>{{$value.episode}}</p>
+                        <p>{{$value.updateTime}}</p>
+                        <p>下载次数:{{$value.downloadCount}}</p>
+                    </div>
+                </div>
+                {{/each}}
+            </script>
+        </div>
+
+    </section>
+</div>
+</body>
+</html>

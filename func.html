@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>专题列表</title>
+    <script src="lib/jquery/jquery-1.12.4.min.js"></script>
+    <!--<link rel="stylesheet/less" href="less/base.less"/>-->
+    <!--<link rel="stylesheet/less" href="less/func.less"/>-->
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/func.css"/>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css"/>
+    <script src="lib/template/template.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.js"></script>
+    <!--<script src="lib/less/less.js"></script>-->
+    <script src="js/func.js"></script>
+</head>
+<body>
+<div id="layout">
+        <div id="func">
+            <div class="topTitle clearfix">
+                <a href="index.html"><span>&lt;</span></a>
+                <h3>专题列表</h3>
+            </div>
+
+        </div>
+
+        <div class="func-content">
+        </div>
+
+        <script id="func-template" type="text/html">
+            {{each}}
+            <div class="funcs">
+                <a href="{{$value.url}}">
+                    <img src="{{$value.img}}" alt="">
+                </a>
+                <p>下载次数:{{$value.title}}</p>
+            </div>
+            {{/each}}
+        </script>
+
+</div>
+</body>
+</html>

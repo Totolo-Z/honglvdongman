@@ -1,0 +1,9 @@
+$(function(){
+    $.ajax({
+        url:'http://127.0.0.1:9091/api/getlianzai',
+        success:function(data){
+            //console.log(data);
+            $('.serialize-content').html(template('serialize-template',data));
+        }
+    })
+})

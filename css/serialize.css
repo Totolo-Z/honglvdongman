@@ -1,0 +1,58 @@
+#layout {
+  max-width: 440px;
+  min-width: 300px;
+  margin: 0px auto;
+  position: relative;
+}
+#serialize {
+  width: 100%;
+}
+#serialize .topTitle {
+  width: 100%;
+  height: 60px;
+  background-color: #ccc;
+  border-bottom: 2px solid #8c8c8c;
+}
+#serialize .topTitle > a {
+  position: absolute;
+}
+#serialize .topTitle > a > span {
+  display: inline-block;
+  font-size: 35px;
+  line-height: 60px;
+  color: red;
+  float: left;
+  padding-left: 15px;
+}
+#serialize .topTitle > h3 {
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-weight: 800;
+}
+#serialize .serialize-content {
+  width: 100%;
+}
+#serialize .serialize-content .media {
+  width: 100%;
+  height: 170px;
+  margin: 0;
+  padding-top: 15px;
+  padding-left: 15px;
+  border-bottom: 1px solid #ccc;
+}
+#serialize .serialize-content .media .media-left {
+  width: 25%;
+}
+#serialize .serialize-content .media .media-left > a > img {
+  width: 100%;
+}
+#serialize .serialize-content .media .media-body > h4 {
+  color: #000000;
+  font-weight: 800;
+  height: 30px;
+  margin-bottom: 10px;
+}
+/*#serialize .serialize-content .media .media-body > p {*/
+  /*margin-bottom: 30px;*/
+/*}*/
